@@ -234,6 +234,19 @@ ol[role="list"] {
   padding-block: clamp(3rem, 6vw, 5rem) 0;
 }
 
+/* page-head berdiri di background terang: jangan pakai warna hero gelap */
+.page-head .hero__title {
+  color: var(--color-ink);
+}
+
+.page-head .hero__lead {
+  color: var(--color-ink-2);
+}
+
+.page-head .eyebrow {
+  color: var(--color-accent);
+}
+
 .section__foot {
   margin-top: var(--space-6);
 }
@@ -611,8 +624,22 @@ ol[role="list"] {
   to   { transform: scale(1.08); }
 }
 
-/* Overlay hijau-hitam: sisi kiri paling pekat agar teks selalu kontras AA,
-   sisi kanan lebih terbuka supaya foto tetap terlihat. Posisinya di slideshow. */
+/* Overlay: per slide, di atas foto, di bawah teks/gradasi kontras.
+   Hanya slide aktif yang punya overlay agar foto tidak tertutup dobel. */
+.hero__slide::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: rgba(8, 22, 15, 0.32);
+  pointer-events: none;
+}
+
+.hero__slide.is-active::after {
+  background: rgba(8, 22, 15, 0.32);
+}
+
+/* Gradasi kontras untuk teks: hanya di sisi kiri, tidak menutup foto 100% */
 .hero__slideshow::after {
   content: "";
   position: absolute;
@@ -620,9 +647,10 @@ ol[role="list"] {
   z-index: 2;
   background: linear-gradient(
     100deg,
-    rgba(16, 36, 27, 0.95) 30%,
-    rgba(16, 36, 27, 0.62) 62%,
-    rgba(16, 36, 27, 0.28)
+    rgba(8, 22, 15, 0.72) 0%,
+    rgba(8, 22, 15, 0.45) 42%,
+    rgba(8, 22, 15, 0.10) 62%,
+    transparent 75%
   );
   pointer-events: none;
 }
@@ -1428,6 +1456,13 @@ p {
 /* --------------------------------------------------------------------------
    17. Reveal on scroll (IntersectionObserver, hormati reduced motion)
    -------------------------------------------------------------------------- */
+/* Hero & page-head harus langsung terlihat, jangan tunggu observer */
+.hero__content.reveal,
+.page-head .hero__content.reveal {
+  opacity: 1;
+  transform: none;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .reveal {
     opacity: 0;
@@ -1439,6 +1474,14 @@ p {
   .reveal.is-visible {
     opacity: 1;
     transform: none;
+  }
+
+  /* hero & page-head dikecualikan dari animasi awal */
+  .hero__content.reveal,
+  .page-head .hero__content.reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
   }
 
   .reveal-group > *:nth-child(2) {
