@@ -1,0 +1,14 @@
+# Debug screenshots (local only)
+hero-*.png
+
+# Local tooling & agent state
+.playwright-mcp/
+.scratch/
+.zcode/
+.agents/
+skills-lock.json
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.log

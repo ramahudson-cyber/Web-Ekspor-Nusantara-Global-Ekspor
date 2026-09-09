@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' https://picsum.photos https://fastly.picsum.photos data:; connect-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self' https://wa.me">
+  <meta name="description" content="Contact Nusantara Global Export by WhatsApp, email, or the short form. Tell us the product, the amount, and the destination port.">
+  <meta name="theme-color" content="#FAFAF7">
+  <meta property="og:title" content="Contact - Nusantara Global Export">
+  <meta property="og:description" content="Let's talk volumes and specifications.">
+  <meta property="og:type" content="website">
+  <!-- TODO: ganti domain asli saat go-live -->
+  <link rel="canonical" href="https://www.nusantaraglobalexport.com/contact.html">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- TODO: self-host font untuk produksi komersial -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Outfit:wght@600;700&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Contact - Nusantara Global Export</title>
+</head>
+<body data-page="contact">
+  <a class="skip-link" href="#main" data-i18n="nav.skip">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="index.html" aria-label="Nusantara Global Export, home">
+        <svg class="brand__mark" width="34" height="34" viewBox="0 0 34 34" fill="none" aria-hidden="true" focusable="false">
+          <rect width="34" height="34" rx="10" fill="#1B6B47"/>
+          <circle cx="17" cy="20" r="7.5" fill="#FAFAF7"/>
+          <path d="M13 10c2.2-3.2 5.8-3.2 8 0" stroke="#FAFAF7" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <span class="brand__name">Nusantara<span>Global Export</span></span>
+      </a>
+
+      <nav class="site-nav" aria-label="Main">
+        <ul class="site-nav__list" role="list">
+          <li><a class="site-nav__link" href="index.html" data-i18n="nav.home">Home</a></li>
+          <li><a class="site-nav__link" href="products.html" data-i18n="nav.products">Products</a></li>
+          <li><a class="site-nav__link" href="about.html" data-i18n="nav.about">About</a></li>
+          <li><a class="site-nav__link" href="contact.html" aria-current="page" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="site-header__actions">
+        <div class="lang-toggle" role="group" data-i18n-attr="aria-label:nav.langLabel" aria-label="Switch language">
+          <button type="button" class="lang-toggle__btn" data-lang="en" lang="en" aria-pressed="true">EN</button>
+          <button type="button" class="lang-toggle__btn" data-lang="id" lang="id" aria-pressed="false">ID</button>
+        </div>
+        <!-- TODO: ganti nomor WhatsApp asli, termasuk di js/main.js (WA_NUMBER) -->
+        <a class="btn btn--primary btn--small site-header__cta" href="https://wa.me/6281200000000?text=Hello%20Nusantara%20Global%20Export%2C%20I%20would%20like%20to%20discuss%20a%20bulk%20order." target="_blank" rel="noopener noreferrer" data-i18n="nav.cta">Talk to sales</a>
+        <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="mobile-nav">
+          <span class="visually-hidden">Menu</span>
+          <span class="nav-toggle__bar" aria-hidden="true"></span>
+          <span class="nav-toggle__bar" aria-hidden="true"></span>
+          <span class="nav-toggle__bar" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+
+    <nav class="site-nav--mobile" id="mobile-nav" aria-label="Main">
+      <div class="container">
+        <ul class="site-nav__list" role="list">
+          <li><a class="site-nav__link" href="index.html" data-i18n="nav.home">Home</a></li>
+          <li><a class="site-nav__link" href="products.html" data-i18n="nav.products">Products</a></li>
+          <li><a class="site-nav__link" href="about.html" data-i18n="nav.about">About</a></li>
+          <li><a class="site-nav__link" href="contact.html" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+        <a class="btn btn--primary" href="https://wa.me/6281200000000?text=Hello%20Nusantara%20Global%20Export%2C%20I%20would%20like%20to%20discuss%20a%20bulk%20order." target="_blank" rel="noopener noreferrer" data-i18n="nav.cta">Talk to sales</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="page-head">
+      <div class="container hero__content reveal">
+        <h1 class="hero__title" data-i18n="contact.hero.h1">Tell us what you need</h1>
+        <p class="hero__lead" data-i18n="contact.hero.sub">The fastest answer is on WhatsApp. The form below writes the message for you.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-grid">
+        <aside class="contact-info reveal" aria-labelledby="contact-info-title">
+          <h2 id="contact-info-title" data-i18n="contact.info.title">Contact us</h2>
+          <div class="contact-info__item">
+            <span class="contact-info__label" data-i18n="contact.info.waLabel">WhatsApp</span>
+            <span class="contact-info__value">
+              <!-- TODO: nomor WhatsApp asli -->
+              <a href="https://wa.me/6281200000000" target="_blank" rel="noopener noreferrer">+62 812 0000 0000</a>
+            </span>
+          </div>
+          <div class="contact-info__item">
+            <span class="contact-info__label" data-i18n="contact.info.emailLabel">Email</span>
+            <span class="contact-info__value">
+              <!-- TODO: email asli -->
+              <a href="mailto:sales@nusantaraglobalexport.com">sales@nusantaraglobalexport.com</a>
+            </span>
+          </div>
+          <div class="contact-info__item">
+            <span class="contact-info__label" data-i18n="contact.info.officeLabel">Office</span>
+            <span class="contact-info__value" data-i18n="footer.address">Surabaya, East Java, Indonesia</span>
+          </div>
+          <div class="contact-info__item">
+            <span class="contact-info__label" data-i18n="contact.info.hoursLabel">Hours</span>
+            <span class="contact-info__value" data-i18n="contact.info.hours">Monday to Friday, 08.00 to 17.00 (WIB)</span>
+          </div>
+        </aside>
+
+        <div class="form-panel reveal">
+          <h2 data-i18n="contact.form.title">Write your message</h2>
+          <p class="form-panel__note" data-i18n="contact.form.note">When you send, WhatsApp opens with your message ready. Nothing is stored on any server.</p>
+
+          <form id="inquiry-form" novalidate>
+            <div class="form-grid">
+              <div class="field">
+                <label class="field__label" for="field-name" data-i18n="contact.form.name">Full name</label>
+                <input class="field__input" id="field-name" name="name" type="text" maxlength="80" autocomplete="name" required aria-describedby="error-name">
+                <p class="field__error" id="error-name" data-i18n="contact.form.errName">Please write your name.</p>
+              </div>
+
+              <div class="field">
+                <label class="field__label" for="field-company" data-i18n="contact.form.company">Company</label>
+                <input class="field__input" id="field-company" name="company" type="text" maxlength="80" autocomplete="organization">
+              </div>
+
+              <div class="field">
+                <label class="field__label" for="field-country" data-i18n="contact.form.country">Destination country</label>
+                <input class="field__input" id="field-country" name="country" type="text" maxlength="60" autocomplete="country-name">
+              </div>
+
+              <div class="field">
+                <label class="field__label" for="field-product" data-i18n="contact.form.product">Product</label>
+                <select class="field__input" id="field-product" name="product">
+                  <option value="" selected data-i18n="contact.form.productNone">Not sure yet</option>
+                  <option value="Semi Husked Coconut" data-i18n="products.semihusk.name">Semi Husked Coconut</option>
+                  <option value="Mature Coconut" data-i18n="products.mature.name">Mature Coconut</option>
+                  <option value="Copra" data-i18n="products.copra.name">Copra</option>
+                  <option value="Coconut Shell Charcoal" data-i18n="products.charcoal.name">Coconut Shell Charcoal</option>
+                  <option value="Coco Peat" data-i18n="products.cocopeat.name">Coco Peat</option>
+                  <option value="Coco Fiber" data-i18n="products.fiber.name">Coco Fiber</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label class="field__label" for="field-volume" data-i18n="contact.form.volume">Monthly amount</label>
+                <input class="field__input" id="field-volume" name="volume" type="text" maxlength="60" data-i18n-attr="placeholder:contact.form.volumePh" placeholder="e.g. 2 containers">
+              </div>
+
+              <div class="field field--full">
+                <label class="field__label" for="field-message" data-i18n="contact.form.message">Message</label>
+                <textarea class="field__input" id="field-message" name="message" rows="5" maxlength="600" required aria-describedby="error-message" data-i18n-attr="placeholder:contact.form.messagePh" placeholder="Product, amount, destination port..."></textarea>
+                <p class="field__error" id="error-message" data-i18n="contact.form.errMsg">Please write a short message.</p>
+              </div>
+            </div>
+
+            <div class="form-actions">
+              <button class="btn btn--primary" type="submit" data-i18n="contact.form.submit">Open WhatsApp</button>
+            </div>
+            <p class="form-status" id="form-status" role="status" hidden></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__grid">
+      <div class="site-footer__brand">
+        <a class="brand" href="index.html" aria-label="Nusantara Global Export, home">
+          <svg class="brand__mark" width="34" height="34" viewBox="0 0 34 34" fill="none" aria-hidden="true" focusable="false">
+            <rect width="34" height="34" rx="10" fill="#1B6B47"/>
+            <circle cx="17" cy="20" r="7.5" fill="#FAFAF7"/>
+            <path d="M13 10c2.2-3.2 5.8-3.2 8 0" stroke="#FAFAF7" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          <span class="brand__name">Nusantara<span>Global Export</span></span>
+        </a>
+        <p data-i18n="footer.tagline">Coconut products from Indonesia, shipped worldwide.</p>
+      </div>
+      <nav aria-labelledby="footer-company">
+        <h2 class="site-footer__title" id="footer-company" data-i18n="footer.company">Company</h2>
+        <ul class="site-footer__list" role="list">
+          <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+          <li><a href="products.html" data-i18n="nav.products">Products</a></li>
+          <li><a href="about.html" data-i18n="nav.about">About</a></li>
+          <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h2 class="site-footer__title" id="footer-contact" data-i18n="footer.contact">Contact</h2>
+        <ul class="site-footer__list" role="list">
+          <li><a href="https://wa.me/6281200000000" target="_blank" rel="noopener noreferrer">+62 812 0000 0000</a></li>
+          <li><a href="mailto:sales@nusantaraglobalexport.com">sales@nusantaraglobalexport.com</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="site-footer__title" id="footer-office" data-i18n="footer.office">Office</h2>
+        <ul class="site-footer__list" role="list">
+          <li data-i18n="footer.address">Surabaya, East Java, Indonesia</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container site-footer__bottom">
+      <p>&copy; <span id="footer-year">2026</span> Nusantara Global Export. <span data-i18n="footer.rights">All rights reserved.</span></p>
+    </div>
+  </footer>
+
+  <script src="js/lang.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
