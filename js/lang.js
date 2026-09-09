@@ -63,7 +63,7 @@
       "home.proof.label4": "reply within a day",
 
       "home.products.h2": "What we ship",
-      "home.products.body": "Six products today. More crops will follow as we onboard trusted suppliers.",
+      "home.products.body": "Six curated products, sourced from trusted mills and farms.",
       "home.products.link": "See full catalog",
 
       "home.process.h2": "How your order reaches you",
@@ -195,7 +195,7 @@
       "home.proof.label4": "balas dalam sehari",
 
       "home.products.h2": "Apa yang kami kirim",
-      "home.products.body": "Enam produk hari ini. Komoditas lain menyusul saat pemasok tepercaya siap.",
+      "home.products.body": "Enam produk pilihan, dikurasi dari petani dan pabrik tepercaya.",
       "home.products.link": "Lihat katalog lengkap",
 
       "home.process.h2": "Bagaimana pesanan Anda sampai",
